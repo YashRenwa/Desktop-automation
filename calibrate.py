@@ -1,17 +1,10 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'CALIBRATE.ui'
-#
-# Created by: PyQt5 UI code generator 5.13.2
-#
-# WARNING! All changes made in this file will be lost!
+# GUI application for taking coordinates, keyboard shortcuts, text which should be typed as input.
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 import os
 import pyautogui as pg
-import time
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -146,6 +139,8 @@ class Ui_MainWindow(object):
         self.label_9.setText(_translate("MainWindow", "If you want to use this application to automate more than one tasks, feel free to"))
         self.label_10.setText(_translate("MainWindow", "make a duplicate of it and calibrate it once more for your another task."))
 
+    # Function to take file path as input.
+
     def path_input(self):
         f = open("coordinates and shortcuts.txt", 'w')
         x = f.tell()
@@ -168,11 +163,15 @@ class Ui_MainWindow(object):
         f.write('\n')
         f.close()
 
+    # Function for taking text as input
+
     def input(self):
         f = open("coordinates and shortcuts.txt", 'a')
         f.write(self.lineEdit_2.text())
         f.write('\n')
         f.close()
+
+    # Function for taking position of cursor as input.
 
     def position_map(self):
         f = open("coordinates and shortcuts.txt", 'a')
