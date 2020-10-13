@@ -4,7 +4,7 @@ at any location on screen, pressing keyboard shortcuts, typing any kind of text 
 
 One example where you can use this is, for opening browser and logging into any account of your choice with just one click.
 
-##How to use:
+## How to use:
 Download this project in your desktop. Once you have downloaded it follow the steps:
 * Run the calibrate.exe file. You should see a window like this
 
